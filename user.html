@@ -1,0 +1,48 @@
+<html>
+<body>
+
+    <form method="get" action="/userinfo/check">
+
+    {{form.Username.errors}}
+    <label for="{{form.Username.id_for_label}}"> Username:</label>
+    {{form.Username}}
+    <br>
+
+    {{form.Password.errors}}
+    <label for="{{form.Password.id_for_label}}"> Password:</label>
+    {{form.Password}}
+    <br>
+     
+     
+     {{form.PhoneNumber.errors}}
+    <label for="{{form.PhoneNumber.id_for_label}}"> Phone Number:</label>
+    {{form.PhoneNumber}}
+    <br>
+    
+
+    {{form.Address.errors}}
+    <label for="{{form.Address.id_for_label}}"> Address:</label>
+    {{form.Address}}
+    <br>
+
+
+    
+   {% comment %}
+    <input type="text" name="Username">
+    <br>
+    <input type="text" name="Password">
+    <br>
+    <input type="Number" name="Phone Number">
+    <br>
+    <input type="text" name="Address">
+    <br>
+    {% endcomment %}
+
+    <input type="submit" value="Ok"> 
+     
+
+
+    </form>
+  
+</body>
+</html>
